@@ -22,10 +22,9 @@ interface FormAttributeRepository extends
 	/**
 	 * @param  string $key
 	 * @param  int    $form_id
-	 * @param  boolena $include_no_form  Include attributes with null form_id
 	 * @return Ushahidi\Core\Entity\FormAttribute
 	 */
-	public function getByKey($key, $form_id = null, $include_no_form = false);
+	public function getByKey($key, $form_id = null);
 
 	/**
 	 * @param  int $form_id
